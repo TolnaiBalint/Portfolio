@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/*------------------------------------*\
+    BODY
+\*------------------------------------*/
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100vh auto auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "about"
+        "project"
+        "skills";
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans';
+    text-align: center;
+    background: var(--aliceblue-color);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+:root {
+    --margin-bottom: 50px;
+    --margin: 60px auto;
+    --aqua-color: aqua;
+    --backround: rgba(7, 15, 44, 0.921);
+    --aliceblue-color: aliceblue;
+}
+
+.bar::after {
+    background-color: rgba(0, 0, 0, 0.656);
+    content: "";
+    display: block;
+    height: .15rem;
+    width: 100px;
+    margin: 1.5rem auto;
+}
+
+.contact-bar::after {
+    background-color: var(--aliceblue-color);
+}
+
+
+
+/*------------------------------------*\
+  HEADER
+\*------------------------------------*/
+
+header {
+    background: var(--backround);
+    color: var(--aliceblue-color);
+    display: grid;
+    align-content: center;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+
+strong {
+    color: var(--aqua-color);
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+.bubbly-button {
+    color: var(--aliceblue-color);
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        font-size: 25px;
+    }
+}
+
+
+/*------------------------------------*\
+  ABOUT
+\*------------------------------------*/
+
+
+.A {
+    margin: var(--margin);
+}
+
+.text {
+    color: rgba(0, 0, 0, 0.656);
+    margin: 10px;
+    text-align: left;
+    letter-spacing: .015em;
+    line-height: 1.11;
+}
+
+.text-titel {
+    margin: 20px;
+    font-weight: 600;
+}
+
+.profile-img {
+    margin-bottom: var(--margin-bottom);
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, .6) 0px 0px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.5);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;
+}
+
+.text-travel {
+    margin-bottom: var(--margin-bottom);
+}
+
+@media only screen and (min-width: 768px) {
+   .about {
+    width: min(100% - 80px, 1000px);
+    margin-inline: auto;
+   }
+   
+    .about-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1px));
+        align-items: center;
+        justify-content: space-around;  
+    }
+
+    .profile-img {
+        margin-bottom: 0;
+        width: 200px;
+    } 
+}
+
+
+/*------------------------------------*\
+  PROJECT
+\*------------------------------------*/
+
+.project {
+    background: rgba(7, 15, 44, 0.056);
+}
+
+.works-header {
+    margin: var(--margin);
+}
+
+.works-img-phone {
+    height: 300px;
+    border-radius: 7px
+}
+
+.cards-phone {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1px));
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: var(--margin-bottom);
+}
+
+.git-availability {
+    line-height: 3;
+}
+
+.fa-3x {
+    margin-bottom: var(--margin-bottom);
+    color: var(--backround);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .cards-phone {
+        display: none;
+    }
+}
+
+/*-----------------*\
+  pc img
+\*-----------------*/
+
+.works-img {
+    height: 250px;
+}
+
+.cardsPc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 10px));
+    gap: 20px;
+    justify-content: center;
+    perspective: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cardsPc {
+        display: none;
+    }
+}
+
+
+
+/*------------------------------------*\
+  SKILL
+\*------------------------------------*/
+
+.skill-header {
+    margin: var(--margin);
+}
+
+.logo-header {
+    margin-bottom: 30px;
+}
+
+.logos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 10px));
+    gap: 35px;
+    margin: 30px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.other {
+    margin-bottom:var(--margin-bottom);
+}
+
+
+
+/*------------------------------------*\
+  BACK BUTTON
+\*------------------------------------*/
+
+.fa-solid {
+    background: var(--aqua-color);
+    padding: 8px;
+    height: 30px;
+}
+
+
+/*------------------------------------*\
+  CONTACT
+\*------------------------------------*/
+
+.contact-me {
+    background: var(--backround);
+    padding: 50px;
+    margin-top: -20px;
+}
+
+.contact-header {
+    color: var(--aliceblue-color);
+}
+
+li {
+    display: inline;
+    letter-spacing: 10px;
+}
+
+.fa-2x {
+    color: var(--aliceblue-color);
+}
+
+/*------------------------------------*\
+  FOOTER
+\*------------------------------------*/
+
+.footer {
+    background: var(--backround);
+    color: var(--aliceblue-color);
+    padding: 20px;
+    font-size: 10px;
+}
