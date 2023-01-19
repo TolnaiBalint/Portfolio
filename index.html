@@ -24,12 +24,17 @@
 
     <header class="header">
         <div class="head">
-            <h1> <strong>Helló, Tolnai Bálint</strong> vagyok. <br>Junior Front-end webfejlesztő.</br> </h1>
-            <button class="bubbly-button" type="button" onclick="gotoAbout()"> Tekintse meg munkáimat</button>
+            <h1 class="welcome-head"> <strong>Helló, Tolnai Bálint</strong> vagyok. <br>Junior Front-end
+                webfejlesztő.</br> </h1>
+            <div class="button" onclick="gotoAbout()">
+                <p class="bubbly-button">Tekintse meg munkáimat
+                    <i class="mdi mdi-arrow-right fa-solid fa-angles-up fa-1x"></i>
+                </p>
+            </div>
         </div>
     </header>
 
-    <section class="about">
+    <section id="about">
         <div class="A">
             <H2 class="bar">About</H2>
         </div>
@@ -75,7 +80,7 @@
                 <img class="works-img-phone" src="img/ColorClock-phone.PNG" alt="ColorClock">
             </a>
         </div>
-        
+
         <div class="cards cardsPc">
             <a href="https://tolnaibalint.github.io/my-business-card/" target="_blank">
                 <img class="works-img" src="img/my-business-card.PNG" alt="businescard">
@@ -114,20 +119,20 @@
 
     <section>
         <div class="back-button" onclick="gotoTop()">
-            <i class="fa-solid fa-angles-up fa-2x"></i>
-           
+            <i class="fa-back fa-solid fa-angles-up fa-2x"></i>
+
         </div>
         <div class="contact-me">
             <h2 class="bar contact-bar contact-header">Contact</h2>
             <ul>
                 <li><a href="https://github.com/TolnaiBalint" target="_blank" title="Git"><i
-                            class="fa-brands fa-square-github fa-2x"></i></a></li>
+                            class="fa-contact fa-brands fa-square-github fa-2x"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/tolnai-b%C3%A1lint-837a13260/" target="_blank"
-                        title="Linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                        title="Linkedin"><i class="fa-contact fa-brands fa-linkedin fa-2x"></i></a></li>
                 <li><a href="https://instagram.com/t_blint?igshid=YmMyMTA2M2Y=" target="_blank" title="Instagram"><i
-                            class="fa-brands fa-square-instagram fa-2x"></i></a></li>
+                            class="fa-contact fa-brands fa-square-instagram fa-2x"></i></a></li>
                 <li><a href="https://facebook.com/balint.tolnai.3" target="_blank" title="Facebook"><i
-                            class="fa-brands fa-square-facebook fa-2x"></i></a></li>
+                            class="fa-contact fa-brands fa-square-facebook fa-2x"></i></a></li>
             </ul>
         </div>
     </section>

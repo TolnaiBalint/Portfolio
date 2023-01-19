@@ -4,13 +4,12 @@
 \*------------------------------------*/
 
 function gotoAbout() {
-    window.scroll({
-        top: 100,
-        left: 0,
-        behavior: "smooth",
-    });
+  const element = document.getElementById("about");
+  element.scrollIntoView({
+    behavior: "smooth",
+  });
+  
 }
-
 
 
 
