@@ -5,7 +5,7 @@
 
 function gotoAbout() {
     window.scroll({
-        top: 800,
+        top: 100,
         left: 0,
         behavior: "smooth",
     });
