@@ -143,7 +143,7 @@ h1 {
     background: var(--buttin-color);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 799px) {
     .welcome-head {
         font-size: 22px;
     }
@@ -192,7 +192,7 @@ h1 {
     margin-bottom: var(--margin-bottom);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     #about {
         width: min(100% - 80px, 1000px);
         margin-inline: auto;
