@@ -10,7 +10,14 @@
   pc img
 \*-----------------*/
 
-
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
 
 .scrolled.js-scroll-left {
     animation: slide-in-left 1s ease-in-out both;
