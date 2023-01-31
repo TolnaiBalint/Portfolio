@@ -14,9 +14,9 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="img/2926319.png">
 
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
     <title>Portfolio</title>
 </head>
 
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="js-scroll js-scroll-top">
         <div class="A">
             <H2 class="bar">About</H2>
         </div>
@@ -53,11 +53,12 @@
                 </p>
 
                 <p class="text-titel">Magamról</p>
-                <p class="text">Jelenleg PLC programozóként dolgozom. Autóipari gyártósorokat, körasztalokat programozok.</p>
+                <p class="text">Jelenleg PLC programozóként dolgozom. Autóipari gyártósorokat, körasztalokat
+                    programozok.</p>
                 <p class="text text-travel">Nagyon szeretek utazni.
                     Elképesztő kalandjaim voltak
-                    Santorinin, Zakopane-ban és a Plitvicei-tavaknál. 
-                    Ezek a kollektív utak nem más, mint az élet megváltoztatása számomra, 
+                    Santorinin, Zakopane-ban és a Plitvicei-tavaknál.
+                    Ezek a kollektív utak nem más, mint az élet megváltoztatása számomra,
                     és alig várom a következőt!
                 </p>
             </div>
@@ -65,42 +66,43 @@
     </section>
 
     <section class="project">
+        <div class="js-scroll js-scroll-top">
+            <div class="works-header">
+                <H2 class="bar">Projects</H2>
+            </div>
+            <div class="cards cards-phone">
+                <a href="https://tolnaibalint.github.io/my-business-card/" target="_blank">
+                    <img class="works-img-phone" src="img/my-busines-card-phone.PNG" alt="businescard">
+                </a>
+                <a href="https://tolnaibalint.github.io/Wedding/" target="_blank">
+                    <img class="works-img-phone" src="img/Wedding-phone.PNG" alt="wedding">
+                </a>
+                <a href="https://tolnaibalint.github.io/JS-ColorClock/" target="_blank">
+                    <img class="works-img-phone" src="img/ColorClock-phone.PNG" alt="ColorClock">
+                </a>
+            </div>
 
-        <div class="works-header">
-            <H2 class="bar">Projects</H2>
-        </div>
-        <div class="cards cards-phone">
-            <a href="https://tolnaibalint.github.io/my-business-card/" target="_blank">
-                <img class="works-img-phone" src="img/my-busines-card-phone.PNG" alt="businescard">
-            </a>
-            <a href="https://tolnaibalint.github.io/Wedding/" target="_blank">
-                <img class="works-img-phone" src="img/Wedding-phone.PNG" alt="wedding">
-            </a>
-            <a href="https://tolnaibalint.github.io/JS-ColorClock/" target="_blank">
-                <img class="works-img-phone" src="img/ColorClock-phone.PNG" alt="ColorClock">
-            </a>
-        </div>
+            <div class="card cardsPc">
+                <a href="https://tolnaibalint.github.io/my-business-card/" target="_blank">
+                    <img class="works-img" src="img/my-business-card.PNG" alt="businescard">
+                </a>
+                <a href="https://tolnaibalint.github.io/Wedding/" target="_blank">
+                    <img class="works-img" src="img/Wedding.PNG" alt="wedding">
+                </a>
+                <a href="https://tolnaibalint.github.io/JS-ColorClock/" target="_blank">
+                    <img class="works-img" src="img/ColorClock.PNG" alt="ColorClock">
+                </a>
+            </div>
 
-        <div class="cards cardsPc">
-            <a href="https://tolnaibalint.github.io/my-business-card/" target="_blank">
-                <img class="works-img" src="img/my-business-card.PNG" alt="businescard">
-            </a>
-            <a href="https://tolnaibalint.github.io/Wedding/" target="_blank">
-                <img class="works-img" src="img/Wedding.PNG" alt="wedding">
-            </a>
-            <a href="https://tolnaibalint.github.io/JS-ColorClock/" target="_blank">
-                <img class="works-img" src="img/ColorClock.PNG" alt="ColorClock">
-            </a>
-        </div>
-
-        <div class="git-availability">
-            <p>Elérhetőség az összes projekthez</p>
-            <a href="https://github.com/TolnaiBalint" target="_blank" title="GitHub"><i
-                    class="fa-brands fa-square-github fa-3x"></i></a>
+            <div class="git-availability">
+                <p>Elérhetőség az összes projekthez</p>
+                <a href="https://github.com/TolnaiBalint" target="_blank" title="GitHub"><i
+                        class="fa-brands fa-square-github fa-3x"></i></a>
+            </div>
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills js-scroll js-scroll-top">
         <div>
             <h2 class="skill-header bar">Skill</h2>
             <p class="logo-header">Front-end</p>
@@ -118,22 +120,24 @@
     </section>
 
     <section>
-        <div class="back-button" onclick="gotoTop()">
+        <div class="back-button js-scroll js-scroll-top" onclick="gotoTop()">
             <i class="fa-back fa-solid fa-angles-up fa-2x"></i>
 
         </div>
         <div class="contact-me">
-            <h2 class="bar contact-bar contact-header">Contact</h2>
-            <ul>
-                <li><a href="https://github.com/TolnaiBalint" target="_blank" title="Git"><i
-                            class="fa-contact fa-brands fa-square-github fa-2x"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/tolnai-b%C3%A1lint-837a13260/" target="_blank"
-                        title="Linkedin"><i class="fa-contact fa-brands fa-linkedin fa-2x"></i></a></li>
-                <li><a href="https://instagram.com/t_blint?igshid=YmMyMTA2M2Y=" target="_blank" title="Instagram"><i
-                            class="fa-contact fa-brands fa-square-instagram fa-2x"></i></a></li>
-                <li><a href="https://facebook.com/balint.tolnai.3" target="_blank" title="Facebook"><i
-                            class="fa-contact fa-brands fa-square-facebook fa-2x"></i></a></li>
-            </ul>
+            <div class="js-scroll js-scroll-top">
+                <h2 class="bar contact-bar contact-header">Contact</h2>
+                <ul>
+                    <li><a href="https://github.com/TolnaiBalint" target="_blank" title="Git"><i
+                                class="fa-contact fa-brands fa-square-github fa-2x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/tolnai-b%C3%A1lint-837a13260/" target="_blank"
+                            title="Linkedin"><i class="fa-contact fa-brands fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="https://instagram.com/t_blint?igshid=YmMyMTA2M2Y=" target="_blank" title="Instagram"><i
+                                class="fa-contact fa-brands fa-square-instagram fa-2x"></i></a></li>
+                    <li><a href="https://facebook.com/balint.tolnai.3" target="_blank" title="Facebook"><i
+                                class="fa-contact fa-brands fa-square-facebook fa-2x"></i></a></li>
+                </ul>
+            </div>
         </div>
     </section>
 

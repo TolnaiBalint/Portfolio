@@ -194,6 +194,7 @@ h1 {
 
 @media only screen and (min-width: 992px) {
     #about {
+        height: 100vh;
         width: min(100% - 80px, 1000px);
         margin-inline: auto;
     }
@@ -246,7 +247,11 @@ h1 {
     color: var(--backround);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
+    .project {
+        height: 100vh;
+    }
+    
     .cards-phone {
         display: none;
     }
@@ -270,7 +275,8 @@ h1 {
     perspective: 500px;
 }
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 992px) {
     .cardsPc {
         display: none;
     }
@@ -304,6 +310,12 @@ h1 {
 
 .other {
     margin-bottom: var(--margin-bottom);
+}
+
+@media only screen and (min-width: 768px) {
+    .skills {
+        height: 70vh;
+    }
 }
 
 
