@@ -56,7 +56,7 @@ table {
 .container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100vh auto auto auto;
+    grid-template-rows: 100vh auto;
     gap: 0px 0px;
     grid-template-areas:
         "header"
@@ -80,6 +80,7 @@ h2 {
     --backround: rgba(7, 15, 44, 0.921);
     --aliceblue-color: aliceblue;
     --buttin-color: rgb(2, 224, 224);
+    --site-height: 100vh;
 }
 
 .bar::after {
@@ -194,9 +195,11 @@ h1 {
 
 @media only screen and (min-width: 992px) {
     #about {
-        height: 100vh;
+        height: var(--site-height);
         width: min(100% - 80px, 1000px);
         margin-inline: auto;
+        display: grid;
+        grid-template-rows: .2fr .8fr;
     }
 
     .about-content {
@@ -248,12 +251,19 @@ h1 {
 }
 
 @media only screen and (min-width: 992px) {
-    .project {
-        height: 100vh;
-    }
-    
     .cards-phone {
         display: none;
+    }
+
+    .project {
+        height: var(--site-height);
+        display: grid;
+        grid-template-rows: .2fr .6fr .2fr;
+    }
+
+    .cardsPc  {
+        display: grid;
+        align-items: center;
     }
 }
 
@@ -270,7 +280,7 @@ h1 {
 .cardsPc {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(420px, 10px));
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     perspective: 500px;
 }
@@ -278,6 +288,7 @@ h1 {
 
 @media only screen and (max-width: 992px) {
     .cardsPc {
+        height: auto;
         display: none;
     }
 }
@@ -315,7 +326,10 @@ h1 {
 @media only screen and (min-width: 768px) {
     .skills {
         height: 70vh;
+        
     }
+
+
 }
 
 

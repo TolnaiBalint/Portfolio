@@ -2,13 +2,6 @@
 /*------------------------------------*\
     js-scroll
 \*------------------------------------*/
-/*-----------------*\
-  phone img
-\*-----------------*/
-
-/*-----------------*\
-  pc img
-\*-----------------*/
 
 .js-scroll {
     opacity: 0;
@@ -19,48 +12,16 @@
     opacity: 1;
   }
 
-.scrolled.js-scroll-left {
-    animation: slide-in-left 1s ease-in-out both;
-    animation-delay: 0.2s;
-}
-.scrolled.js-scroll-right {
-    animation: slide-in-right 1s ease-in-out both;
-    animation-delay: 0.2s;
-}
 
 
-
-@keyframes slide-in-left {
-    0% {
-        -webkit-transform: translateX(-300px);
-        transform: translateX(-300px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(300px);
-        transform: translateX(300px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
+/*-----------------*\
+  phone animation
+\*-----------------*/
 
 @media only screen and (max-width: 992px) {
 
     .scrolled.js-scroll-top {
         animation: slide-in-top 1.5s ease-in-out both;
-        animation-delay: 0.2s;
       }
 
       @keyframes slide-in-top {
@@ -77,4 +38,63 @@
       }
 }
 
+
+
+/*-----------------*\
+  pc animation
+\*-----------------*/
+
+@media only screen and (min-width: 992px) {
+
+    .scrolled.js-scroll-left {
+        animation: slide-in-left 1s ease-in-out both;
+    }
+    .scrolled.js-scroll-right {
+        animation: slide-in-right 1s ease-in-out both;
+    }
+    
+    
+    @keyframes slide-in-left {
+        0% {
+            -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slide-in-right {
+        0% {
+            -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    .scrolled.js-scroll--top {
+      animation: slide-in--top 1.5s ease-in-out both;
+    }
+
+    @keyframes slide-in--top {
+      0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+}
 
