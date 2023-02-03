@@ -279,10 +279,10 @@ h1 {
 
 .cardsPc {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 10px));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1px));
+    gap: 1rem;
     justify-content: center;
-    perspective: 500px;
+    
 }
 
 
