@@ -256,7 +256,6 @@ h1 {
     }
 
     .project {
-        height: var(--site-height);
         display: grid;
         grid-template-rows: .2fr .6fr .2fr;
     }
@@ -279,8 +278,8 @@ h1 {
 
 .cardsPc {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1px));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1px));
+    gap: 10px;
     justify-content: center;
     
 }
