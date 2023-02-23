@@ -78,7 +78,7 @@ h2 {
     --margin: 60px auto;
     --aqua-color: #19E8E2;
     --backround: #17234D;
-    --aliceblue-color: aliceblue;
+    --aliceblue-color: #f0f8ff;
     --buttin-color: #19E8E2;
     --site-height: 100vh;
 }
@@ -110,6 +110,14 @@ h2 {
     justify-content: center;
     font-size: 16px;
     line-height: 1.3;
+    
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #051937, #00466d, #00799e, #00afc7, #15b9b3);
+}
+
+.head {
+    z-index: 1;
 }
 
 strong {
@@ -152,6 +160,68 @@ h1 {
     .bubbly-button {
         font-size: 18px;
     }
+}
+
+/*HEADER BACKGROUND*/
+
+.header-img {
+  position: absolute;
+  height: 100000px;
+  width: 100000px;
+  top: -8500px;
+  left: -8000px;
+  animation-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+  animation-name: float;
+  animation-iteration-count: infinite;
+}
+
+.img-1 {
+  opacity: 0.25;
+  background: url(img/dust1.jpg);
+  background-repeat: repeat;
+  animation-duration: 600s;
+}
+
+.img-2 {
+  opacity: 0.2;
+  background: url(img/dust2.jpg);
+  background-repeat: repeat;
+  animation-duration: 450s;
+}
+
+.img-3 {
+  opacity: 0.15;
+  background: url(img/dust3.jpg);
+  background-repeat: repeat;
+  animation-duration: 350s;
+}
+/*ANIMATIONS*/
+
+@keyframes twinkle {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(175px, 100px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+      transform:translate(8000px, 4000px);
+  }
 }
 
 
