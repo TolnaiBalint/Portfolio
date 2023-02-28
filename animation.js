@@ -41,7 +41,44 @@ function gotoTop() {
     });
 }
 
+/*------------------------------------*\
+  NAVBAR
+\*------------------------------------*/
 
+function tab1() {
+  const element = document.getElementById("header");
+  element.scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
+function tab2() {
+  const element = document.getElementById("about");
+  element.scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
+function tab3() {
+  const element = document.getElementById("project");
+  element.scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
+function tab4() {
+  const element = document.getElementById("skill");
+  element.scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
+function tab5() {
+  const element = document.getElementById("contact");
+  element.scrollIntoView({
+    behavior: "smooth",
+  });
+}
 
 /*------------------------------------*\
   PROJECT

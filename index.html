@@ -22,7 +22,7 @@
 
 <body class="container">
 
-    <header class="header">
+    <header id="header" class="header">
         <div class="head">
             <h1 class="welcome-head"> <strong>Helló, Tolnai Bálint</strong> vagyok. <br>Junior Front-end
                 webfejlesztő.</br> </h1>
@@ -40,6 +40,24 @@
 
     </header>
 
+    <div class="navbar">
+        <div>
+            <h1 onclick="tab1()"><i class="fa-solid fa-rocket fa-2x"></i></h1>
+        </div>
+        <div class="menu-phone">
+            <i class="icon fa-solid fa-user-large" onclick="tab2()"></i>
+            <i class="icon fa-solid fa-lightbulb" onclick="tab3()"></i>
+            <i class="icon fa-solid fa-bolt" onclick="tab4()"></i>
+            <i class="icon fa-solid fa-comment" onclick="tab5()"></i>
+        </div>
+        <div class="menu">
+            <label onclick="tab2()">About</label>
+            <label onclick="tab3()">Projects</label>
+            <label onclick="tab4()">Skill</label>
+            <label onclick="tab5()">Contact</label>
+        </div>
+    </div>
+
     <section id="about" class="js-scroll js-scroll-top">
         <div class="A">
             <H2 class="js-scroll js-scroll-left">About</H2>
@@ -48,6 +66,7 @@
             </div>
         </div>
         <div class="about-content">
+            
             <div class="img js-scroll js-scroll-left">
                 <img class="profile-img" src="img/I'm.png" alt="Profile picture">
             </div>
@@ -74,7 +93,7 @@
         </div>
     </section>
 
-    <section class="project">
+    <section id="project" class="project">
 
         <div class="works-header js-scroll js-scroll-top">
             <H2 class="js-scroll js-scroll-right">Projects</H2>
@@ -133,7 +152,7 @@
 
     </section>
 
-    <section class="skills js-scroll js-scroll-top">
+    <section id="skill" class="skills js-scroll js-scroll-top">
         <div class="skill-header">
             <h2 class="js-scroll js-scroll-left">Skill</h2>
             <div class="js-scroll js-scroll-left">
@@ -157,7 +176,7 @@
         <div class="back-button js-scroll js-scroll-top js-scroll--top" onclick="gotoTop()">
             <i class="fa-back fa-solid fa-angles-up fa-2x"></i>
         </div>
-        <div class="contact-me">
+        <div id="contact" class="contact-me">
             <div class="js-scroll js-scroll-top js-scroll--top">
                 <h2 class="bar contact-bar contact-header">Contact</h2>
             </div>
