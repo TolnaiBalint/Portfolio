@@ -212,8 +212,8 @@ h1 {
 \*------------------------------------*/
 
 .navbar {
-  position: sticky;
-  top: 94.6vh;
+  position: fixed;
+  bottom:0;
   z-index: 50;
   display: flex;
   justify-content: space-between;
@@ -222,6 +222,7 @@ h1 {
   width: 100%;
   background-color: #06101f;
   color: #f0f8ff;
+  transition: top 0.3s;
 }
 
 .navbar h1 {
@@ -247,9 +248,9 @@ h1 {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .navbar {
-        top: 0;
+       top: 0;
     }
 
     .menu {
@@ -316,7 +317,7 @@ h1 {
     margin-bottom: var(--margin-bottom);
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
     #about {
         height: var(--site-height);
         width: min(100% - 80px, 1000px);
@@ -379,7 +380,7 @@ h1 {
     grid-template-columns: repeat(2,  minmax(20px, 400px));
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
     .cards-phone {
         display: none;
     }
@@ -414,7 +415,7 @@ h1 {
 }
 
 
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
     .cardsPc {
         height: auto;
         display: none;
@@ -451,7 +452,7 @@ h1 {
     margin-bottom: var(--margin-bottom);
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .skills {
         height: 70vh;
         
@@ -514,7 +515,7 @@ h1 {
     font-size: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .footer {
         padding: 50px;
     }
