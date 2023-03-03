@@ -80,17 +80,6 @@ function tab5() {
   });
 }
 
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  var secondSectionsPos = document.getElementById("navbar").offsetTop;
-  var navbar = document.getElementById("navbar");
-  if (currentScrollPos > secondSectionsPos) {
-    navbar.style.top = "0";
-  } else {
-    navbar.style.top = "-100px";
-  }
-}
-
 
 
 /*------------------------------------*\
