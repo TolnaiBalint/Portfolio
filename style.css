@@ -248,6 +248,8 @@ h1 {
     }
 }
 
+
+
 /*-----------------*\
   HEADER BACKGROUND
 \*-----------------*/
@@ -529,15 +531,20 @@ transition: all 0.5s;
 }
 
 .logos {
-    display: grid;
+    display: flex;
+    gap: 20px;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 10px));
-    gap: 35px;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 30px;
 }
 
 .logo {
-    height: 100px;
+    height: 110px;
+}
+
+.lo {
+    height: 120px;
 }
 
 .other {
@@ -545,9 +552,14 @@ transition: all 0.5s;
 }
 
 @media (min-width: 768px) {
-    .skills {
-        height: 70vh;
-
+    .logo {
+        height: 150px;
+    }
+    .log {
+        height: 210px;
+    }
+    .logos {
+        gap: 40px;
     }
 }
 
