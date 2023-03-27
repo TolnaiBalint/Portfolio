@@ -85,7 +85,7 @@ function tab5() {
 /*------------------------------------*\
   PROJECT
 \*------------------------------------*/
-
+//image movement, for scrolling
 /*-----------------*\
   pc img
 \*-----------------*/
@@ -131,3 +131,20 @@ window.addEventListener("scroll", () => {
   handleScrollAnimation();
 });
 
+
+
+/*------------------------------------*\
+  PROJECT
+\*------------------------------------*/
+//image movement when the mouse moves
+
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+  document.querySelectorAll(".logo").forEach(function (move) {
+    var moving_value = move.getAttribute("data-value");
+    var x = (e.clientX * moving_value) / 250;
+    var y = (e.clientY * moving_value) / 150;
+
+    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+  });
+}
