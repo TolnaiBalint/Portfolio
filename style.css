@@ -558,7 +558,7 @@ transition: all 0.5s;
     .log {
         height: 210px;
     }
-    .logos {
+    .logos{
         gap: 40px;
     }
 }
