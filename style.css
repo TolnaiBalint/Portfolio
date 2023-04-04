@@ -2,87 +2,19 @@
 v2.0 | 20110126
 License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -90,44 +22,25 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
 body {
     line-height: 1;
 }
-
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
-
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
     content: '';
     content: none;
 }
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -439,18 +352,12 @@ h1 {
 /*------------------------------------*\
   PROJECT
 \*------------------------------------*/
-
 .project {
     background: rgba(23, 35, 77, 0.056);
 }
 
 .works-header {
     margin: var(--margin);
-}
-
-.works-img-phone {
-    height: 300px;
-    border-radius: 7px
 }
 
 .cards {
@@ -476,43 +383,184 @@ h1 {
     grid-template-columns: repeat(2, minmax(20px, 400px));
 }
 
-@media (min-width: 992px) {
-    .cards-phone {
-        display: none;
-    }
-
-    .cardsPc {
-        gap: 20px; 
-    }
-
-    .project {
-        display: grid;
-        grid-template-rows: .2fr .6fr .2fr;
-    }
-}
-.project img {
-transition: all 0.5s;
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font-sans: "Rubik", sans-serif;
+    --font-serif: "Arial", sans-serif;
 }
 
-.project img:hover {
-    box-shadow: 0 15px 32px -8px rgba(0, 0, 0, 0.75);
-   
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 150px;
+    height: 300px;
+    border-radius: 7px;
+    color: var(--aliceblue-color);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position-x: center;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+}
 
+.card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
 
 /*-----------------*\
-  pc img
+ IMG
 \*-----------------*/
-
-.works-img {
-    height: 250px;
+.card:nth-child(1):before {
+    background-image: url(img/my-busines-card-phone.PNG);
 }
 
-@media (max-width: 992px) {
-    .cardsPc {
-        height: auto;
-        display: none;
+.card:nth-child(2):before {
+    background-image: url(img/Wedding-phone.PNG);
+}
+
+.card:nth-child(3):before {
+    background-image: url(img/QUIZE_phone.PNG);
+}
+
+.card:nth-child(4):before {
+    background-image: url(img/watch-phon.PNG);
+}
+
+.card:nth-child(5):before {
+    background-image: url(img/ColorClock-phone.PNG);
+}
+
+.card:nth-child(6):before {
+    background-image: url(img/Virtual-keyboard-phon.PNG);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    z-index: 1;
+    opacity: 0;
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    transform: translateY(calc(100% - 4.5rem));
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.copy {
+    font-family: var(--font-serif);
+    font-size: .8rem;
+    font-style: italic;
+    line-height: 1.35;
+}
+
+.card:hover .content {
+    opacity: 1;
+    transform: transzlateY(1rem);
+}
+
+.card:hover:before,
+.card:focus-within:before {
+    transform: translateY(-4%);
+}
+
+.card:hover:after,
+.card:focus-within:after {
+    transform: translateY(-50%);
+}
+
+.card:hover .content,
+.card:focus-within .content {
+    transform: translateY(0);
+}
+
+.card:hover .content>*:not(.title),
+.card:focus-within .content>*:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+}
+
+/*-----------------*\
+ Button
+\*-----------------*/
+.btn {
+    cursor: pointer;
+    margin-top: .5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #0d0d0d;
+    border: none;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.btn:focus {
+    outline: 1px dashed var(--aqua-color);
+    outline-offset: 3px;
+}
+
+/*-----------------*\
+ PC IMG
+\*-----------------*/
+@media (min-width: 992px) {
+    .card {
+        height: 250px;
+        width: 350px;
+    }
+
+    .card:nth-child(1):before {
+        background-image: url(img/my-business-card.PNG);
+    }
+
+    .card:nth-child(2):before {
+        background-image: url(img/Wedding.PNG);
+    }
+
+    .card:nth-child(3):before {
+        background-image: url(img/QUIZE.PNG);
+    }
+
+    .card:nth-child(4):before {
+        background-image: url(img/watch.PNG);
+    }
+
+    .card:nth-child(5):before {
+        background-image: url(img/ColorClock.PNG);
+    }
+
+    .card:nth-child(6):before {
+        background-image: url(img/Virtual-keyboard.PNG);
     }
 }
 
@@ -555,10 +603,12 @@ transition: all 0.5s;
     .logo {
         height: 150px;
     }
+
     .log {
         height: 210px;
     }
-    .logos{
+
+    .logos {
         gap: 40px;
     }
 }
