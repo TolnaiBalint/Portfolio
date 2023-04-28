@@ -482,18 +482,22 @@ h1 {
 }
 
 .card:nth-child(3):before {
-    background-image: url(img/QUIZE_phone.PNG);
+    background-image: url(img/burgerBit-phone.PNG);
 }
 
 .card:nth-child(4):before {
-    background-image: url(img/watch-phon.PNG);
+    background-image: url(img/QUIZE_phone.PNG);
 }
 
 .card:nth-child(5):before {
-    background-image: url(img/ColorClock-phone.PNG);
+    background-image: url(img/watch-phon.PNG);
 }
 
 .card:nth-child(6):before {
+    background-image: url(img/ColorClock-phone.PNG);
+}
+
+.card:nth-child(7):before {
     background-image: url(img/Virtual-keyboard-phon.PNG);
 }
 
@@ -592,18 +596,22 @@ h1 {
     }
 
     .card:nth-child(3):before {
-        background-image: url(img/QUIZE.PNG);
+        background-image: url(img/burgerBit.PNG);
     }
 
     .card:nth-child(4):before {
-        background-image: url(img/watch.PNG);
+        background-image: url(img/QUIZE.PNG);
     }
 
     .card:nth-child(5):before {
-        background-image: url(img/ColorClock.PNG);
+        background-image: url(img/watch.PNG);
     }
 
     .card:nth-child(6):before {
+        background-image: url(img/ColorClock.PNG);
+    }
+
+    .card:nth-child(7):before {
         background-image: url(img/Virtual-keyboard.PNG);
     }
 }
