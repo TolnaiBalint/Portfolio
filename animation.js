@@ -47,40 +47,36 @@ function gotoTop() {
   NAVBAR
 \*------------------------------------*/
 
-function tab1() {
-  const element = document.getElementById("header");
-  element.scrollIntoView({
-    behavior: "smooth",
-  });
+/* SHOW MENU */
+const navMenu = document.getElementById("nav-menu"),
+	navToggle = document.getElementById("nav-toggle"),
+	navClose = document.getElementById("nav-close");
+
+/* MENU SHOW */
+/* Validate if constant exists */
+if (navToggle) {
+	navToggle.addEventListener("click", () => {
+		navMenu.classList.add("show-menu");
+	});
 }
 
-function tab2() {
-  const element = document.getElementById("about");
-  element.scrollIntoView({
-    behavior: "smooth",
-  });
+/* MENU HIDDEN */
+/* Validate if constant exists */
+if (navClose) {
+	navClose.addEventListener("click", () => {
+		navMenu.classList.remove("show-menu");
+	});
 }
 
-function tab3() {
-  const element = document.getElementById("project");
-  element.scrollIntoView({
-    behavior: "smooth",
-  });
-}
+/* REMOVE MENU MOBILE */
+const navLink = document.querySelectorAll(".nav__link");
 
-function tab4() {
-  const element = document.getElementById("skill");
-  element.scrollIntoView({
-    behavior: "smooth",
-  });
+function linkAction() {
+	const navMenu = document.getElementById("nav-menu");
+	// When we click on each nav__link, we remove the show-menu class
+	navMenu.classList.remove("show-menu");
 }
-
-function tab5() {
-  const element = document.getElementById("contact");
-  element.scrollIntoView({
-    behavior: "smooth",
-  });
-}
+navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 
 

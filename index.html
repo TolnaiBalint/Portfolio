@@ -22,6 +22,7 @@
 
 <body class="container">
 
+<!-- HEADER -->
     <header id="header" class="header">
         <div class="head">
             <h1 class="welcome-head"> <strong>Helló, Tolnai Bálint</strong> vagyok. <br>Junior Front-end
@@ -37,30 +38,39 @@
             <div class="header-img img-2"></div>
             <div class="header-img img-3"></div>
         </div>
-
     </header>
 
-    <nav id="navbar" class="navbar">
-        <div>
-            <h1 class="icon-phone" onclick="tab1()"><i class=" fa-solid fa-rocket fa-2x"></i></h1>
+<!-- NAVBAR -->
+    <nav class="nav navbar">
+        <a href="#" class="nav__logo">
+            <i class=" fa-solid fa-rocket fa-2x"></i>
+        </a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#about" class="nav__link active-link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#project" class="nav__link">Project</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skill" class="nav__link">Skill</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav__close" id="nav-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <img src="img/spiderman.png" alt="" class="nav__img">
         </div>
-        <div class="menu-phone">
-            <i class="icon fa-solid fa-user-large" onclick="tab2()"></i>
-            <i class="icon fa-solid fa-lightbulb" onclick="tab3()"></i>
-            <i class="icon fa-solid fa-bolt" onclick="tab4()"></i>
-            <i class="icon fa-solid fa-comment" onclick="tab5()"></i>
-        </div>
-        <div class="menu">
-            <label>
-                <h1 class="icon-pc" onclick="tab1()"><i class="fa-solid fa-rocket fa-2x"></i></h1>
-            </label>
-            <label onclick="tab2()">About</label>
-            <label onclick="tab3()">Projects</label>
-            <label onclick="tab4()">Skill</label>
-            <label onclick="tab5()">Contact</label>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
 
+<!-- ABOUT -->
     <section id="about" class="js-scroll js-scroll-top">
         <div class="A">
             <H2 class="js-scroll js-scroll-left">About</H2>
@@ -96,6 +106,7 @@
         </div>
     </section>
 
+<!-- PROJECT -->
     <section id="project" class="project">
 
         <div class="works-header js-scroll js-scroll-top">
@@ -176,6 +187,7 @@
 
     </section>
 
+<!-- SKILL -->
     <section id="skill" class="skills js-scroll js-scroll-top">
         <div class="skill-header">
             <h2 class="js-scroll js-scroll-left">Skill</h2>
@@ -199,6 +211,7 @@
         </div>
     </section>
 
+<!-- BACK BUTTON -->
     <section>
         <div class="back-button js-scroll js-scroll-top js-scroll--top" onclick="gotoTop()">
             <i class="fa-back fa-solid fa-angles-up fa-2x"></i>
@@ -220,6 +233,7 @@
         </div>
     </section>
 
+<!-- FOOTER -->
     <footer class="footer">
         <span>Tolnai Bálint <strong>©2023</strong></span>
     </footer>
