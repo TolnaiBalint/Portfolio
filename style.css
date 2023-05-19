@@ -52,7 +52,6 @@ table {
 /*------------------------------------*\
     BODY
 \*------------------------------------*/
-
 html {
 	scroll-behavior: smooth;
 }
@@ -105,7 +104,6 @@ h2 {
 /*------------------------------------*\
   HEADER
 \*------------------------------------*/
-
 .header {
     background: var(--backround);
     color: var(--aliceblue-color);
@@ -170,7 +168,6 @@ h1 {
 /*-----------------*\
   HEADER BACKGROUND
 \*-----------------*/
-
 .header-img {
     position: absolute;
     height: 100000px;
@@ -215,7 +212,6 @@ h1 {
 /*------------------------------------*\
   NAVBAR
 \*------------------------------------*/
-
 .navbar {
     position: sticky;
     top: 0;
@@ -336,7 +332,6 @@ h1 {
 /*------------------------------------*\
   ABOUT
 \*------------------------------------*/
-
 .A {
     margin: var(--margin);
 }
@@ -486,18 +481,22 @@ h1 {
 }
 
 .card:nth-child(4):before {
-    background-image: url(img/QUIZE_phone.PNG);
+    background-image: url(img/Iphon14-phone.PNG);
 }
 
 .card:nth-child(5):before {
-    background-image: url(img/watch-phon.PNG);
+    background-image: url(img/QUIZE_phone.PNG);
 }
 
 .card:nth-child(6):before {
-    background-image: url(img/ColorClock-phone.PNG);
+    background-image: url(img/watch-phon.PNG);
 }
 
 .card:nth-child(7):before {
+    background-image: url(img/ColorClock-phone.PNG);
+}
+
+.card:nth-child(8):before {
     background-image: url(img/Virtual-keyboard-phon.PNG);
 }
 
@@ -600,18 +599,22 @@ h1 {
     }
 
     .card:nth-child(4):before {
-        background-image: url(img/QUIZE.PNG);
+        background-image: url(img/Iphon14.PNG);
     }
 
     .card:nth-child(5):before {
-        background-image: url(img/watch.PNG);
+        background-image: url(img/QUIZE.PNG);
     }
 
     .card:nth-child(6):before {
-        background-image: url(img/ColorClock.PNG);
+        background-image: url(img/watch.PNG);
     }
 
     .card:nth-child(7):before {
+        background-image: url(img/ColorClock.PNG);
+    }
+
+    .card:nth-child(8):before {
         background-image: url(img/Virtual-keyboard.PNG);
     }
 }
@@ -621,7 +624,6 @@ h1 {
 /*------------------------------------*\
   SKILL
 \*------------------------------------*/
-
 .skill-header {
     margin: var(--margin);
 }
@@ -670,7 +672,6 @@ h1 {
 /*------------------------------------*\
   BACK BUTTON
 \*------------------------------------*/
-
 .fa-back {
     background: var(--buttin-color);
     padding: 8px;
@@ -689,7 +690,6 @@ h1 {
 /*------------------------------------*\
   CONTACT
 \*------------------------------------*/
-
 .contact-me {
     background: var(--backround);
     padding: 50px;
@@ -710,7 +710,6 @@ h1 {
 /*------------------------------------*\
   FOOTER
 \*------------------------------------*/
-
 .footer {
     background: var(--backround);
     color: var(--aliceblue-color);
